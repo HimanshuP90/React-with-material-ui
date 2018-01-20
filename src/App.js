@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import AppBarExampleComposition from './AppBarExampleComposition';
+import Game from './Game';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <AppBarExampleComposition
-        />
+       <Game />
       </div>
     );
   }
