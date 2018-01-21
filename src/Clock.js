@@ -6,7 +6,6 @@ class Clock extends React.Component {
 		this.state = {
 			date: new Date()
 		};
-		this.tick = this.tick.bind(this);
 	}
 
 	componentDidMount() {
@@ -20,9 +19,7 @@ class Clock extends React.Component {
 	}
 
 
-	tick(){
-		this.setState({ date: new Date()});
-	}
+	tick = () => { this.setState({ date: new Date()});}
 
 	render(){
 		return (
